@@ -124,7 +124,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><code><a href="LEDPatternBase.html" title="class in frc.qefrc.qelib.led">LEDPatternBase</a></code></dd>
+<dd><code><a href="LEDPatternBase.html" title="class in frc.qefrc.qelib.led">LEDPatternBase</a></code>, <code><a href="patterns/QEChaos.html" title="class in frc.qefrc.qelib.led.patterns">QEChaos</a></code>, <code><a href="patterns/QEChase.html" title="class in frc.qefrc.qelib.led.patterns">QEChase</a></code>, <code><a href="patterns/QERainbow.html" title="class in frc.qefrc.qelib.led.patterns">QERainbow</a></code>, <code><a href="patterns/QEScanner.html" title="class in frc.qefrc.qelib.led.patterns">QEScanner</a></code></dd>
 </dl>
 <hr>
 <pre>public interface <span class="typeNameLabel">LEDPattern</span></pre>
@@ -160,7 +160,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colFirst"><code>default boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isAnimated()">isAnimated</a></span>()</code></th>
 <td class="colLast">
-<div class="block">If this is false, the pattern is run once and removed from the runningPatterns <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Map</code></a>.</div>
+<div class="block">Indicate if this pattern changes over time.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
@@ -222,7 +222,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>isAnimated</h4>
 <pre class="methodSignature">default&nbsp;boolean&nbsp;isAnimated()</pre>
-<div class="block">If this is false, the pattern is run once and removed from the runningPatterns <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Map</code></a>.</div>
+<div class="block">Indicate if this pattern changes over time. This is also useful if you would like to
+ continuously posess it's section of LEDs. <br>
+ </br> If this is false, the pattern is run once and removed from the runningPatterns <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Map</code></a>.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>whether this pattern is animated; as in, it changes over time</dd>

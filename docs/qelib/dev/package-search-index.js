@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"frc.qefrc.qelib.drive"},{"l":"frc.qefrc.qelib.led"}]
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"frc.qefrc.qelib.drive"},{"l":"frc.qefrc.qelib.led"},{"l":"frc.qefrc.qelib.led.patterns"}]
