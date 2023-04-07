@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10};
+var data = {"i0":10,"i1":10,"i2":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -202,6 +202,13 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <div class="block">Check if a given index is within the section</div>
 </td>
 </tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#testOverlap(frc.qefrc.qelib.led.LEDSection)">testOverlap</a></span>&#8203;(<a href="LEDSection.html" title="class in frc.qefrc.qelib.led">LEDSection</a>&nbsp;checkSection)</code></th>
+<td class="colLast">
+<div class="block">Check if two <a href="LEDSection.html" title="class in frc.qefrc.qelib.led"><code>LEDSection</code></a>'s overlap</div>
+</td>
+</tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
@@ -282,7 +289,7 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <a id="clampWithinSection(int)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>clampWithinSection</h4>
 <pre class="methodSignature">public&nbsp;int&nbsp;clampWithinSection&#8203;(int&nbsp;index)</pre>
@@ -292,6 +299,22 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <dd><code>index</code> - value to clamp</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>value clamped to [start, end]</dd>
+</dl>
+</li>
+</ul>
+<a id="testOverlap(frc.qefrc.qelib.led.LEDSection)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>testOverlap</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;testOverlap&#8203;(<a href="LEDSection.html" title="class in frc.qefrc.qelib.led">LEDSection</a>&nbsp;checkSection)</pre>
+<div class="block">Check if two <a href="LEDSection.html" title="class in frc.qefrc.qelib.led"><code>LEDSection</code></a>'s overlap</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>checkSection</code> - other section to check</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>true if the sections overlap, false if they're separated</dd>
 </dl>
 </li>
 </ul>
