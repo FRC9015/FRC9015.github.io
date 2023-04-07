@@ -122,6 +122,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
+<dl>
+<dt>All Known Implementing Classes:</dt>
+<dd><code><a href="LEDPatternBase.html" title="class in frc.qefrc.qelib.led">LEDPatternBase</a></code></dd>
+</dl>
 <hr>
 <pre>public interface <span class="typeNameLabel">LEDPattern</span></pre>
 <div class="block">Interface for implementing an LED Pattern</div>
@@ -155,7 +159,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>default boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isAnimated()">isAnimated</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">If this is false, the pattern is run once and removed from the runningPatterns <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Map</code></a>.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -216,6 +222,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>isAnimated</h4>
 <pre class="methodSignature">default&nbsp;boolean&nbsp;isAnimated()</pre>
+<div class="block">If this is false, the pattern is run once and removed from the runningPatterns <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink"><code>Map</code></a>.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>whether this pattern is animated; as in, it changes over time</dd>
+</dl>
 </li>
 </ul>
 </li>
