@@ -27,8 +27,8 @@
     catch(err) {
     }
 //-->
-var data = {"i0":1,"i1":2,"i2":2,"i3":2,"i4":2,"i5":2,"i6":2,"i7":2,"i8":2,"i9":2,"i10":2,"i11":2};
-var tabs = {65535:["t0","All Classes"],1:["t1","Interface Summary"],2:["t2","Class Summary"]};
+var data = {"i0":1,"i1":2,"i2":2,"i3":2,"i4":2,"i5":2,"i6":2,"i7":2,"i8":2,"i9":2,"i10":2,"i11":2,"i12":4};
+var tabs = {65535:["t0","All Classes"],1:["t1","Interface Summary"],2:["t2","Class Summary"],4:["t3","Enum Summary"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -105,7 +105,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <table class="typeSummary">
-<caption><span id="t0" class="activeTableTab"><span>All Classes</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Interface Summary</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Class Summary</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Classes</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Interface Summary</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Class Summary</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Enum Summary</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Class</th>
 <th class="colLast" scope="col">Description</th>
@@ -118,7 +118,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><a href="frc/qefrc/qelib/led/LEDPatternBase.html" title="class in frc.qefrc.qelib.led">LEDPatternBase</a></td>
-<th class="colLast" scope="row">&nbsp;</th>
+<th class="colLast" scope="row">
+<div class="block">{@inheritDoc LEDPattern}</div>
+</th>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><a href="frc/qefrc/qelib/led/LEDSection.html" title="class in frc.qefrc.qelib.led">LEDSection</a></td>
@@ -160,8 +162,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <tr id="i8" class="altColor">
 <td class="colFirst"><a href="frc/qefrc/qelib/drive/QEDiffDrive.html" title="class in frc.qefrc.qelib.drive">QEDiffDrive</a></td>
 <th class="colLast" scope="row">
-<div class="block">QE DiffDrive Class NOT DONE DO NOT USE <br>
- </br></div>
+<div class="block"><b> NOT DONE DO NOT USE </b> <br>
+ </br> Fancier Differential Drive handler class that is designed for use with 4 REV Robotics
+ NEO/Spark Max pairs (2 Per Side) attached to a single-speed gearbox.</div>
 </th>
 </tr>
 <tr id="i9" class="rowColor">
@@ -180,6 +183,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colFirst"><a href="frc/qefrc/qelib/led/patterns/QEScanner.html" title="class in frc.qefrc.qelib.led.patterns">QEScanner</a></td>
 <th class="colLast" scope="row">
 <div class="block">Color Scanning effect; the "eye" color scans back and forth.</div>
+</th>
+</tr>
+<tr id="i12" class="altColor">
+<td class="colFirst"><a href="frc/qefrc/qelib/drive/WheelTypes.html" title="enum in frc.qefrc.qelib.drive">WheelTypes</a></td>
+<th class="colLast" scope="row">
+<div class="block">Built in conversions for common wheel sizes.</div>
 </th>
 </tr>
 </table>

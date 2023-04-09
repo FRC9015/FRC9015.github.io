@@ -83,13 +83,13 @@ loadScripts(document, 'script');</script>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li>Method</li>
 </ul>
@@ -127,14 +127,94 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public class <span class="typeNameLabel">QEDiffDrive</span>
 extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></pre>
-<div class="block">QE DiffDrive Class NOT DONE DO NOT USE <br>
- </br></div>
+<div class="block"><b> NOT DONE DO NOT USE </b> <br>
+ </br> Fancier Differential Drive handler class that is designed for use with 4 REV Robotics
+ NEO/Spark Max pairs (2 Per Side) attached to a single-speed gearbox. Current defaults are based
+ on a 2023 Kit of Parts chassis.</div>
 </li>
 </ul>
 </div>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<section>
+<ul class="blockList">
+<li class="blockList"><a id="field.summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="memberSummary">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Field</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;com.revrobotics.CANSparkMax&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#allMotors">allMotors</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/math/kinematics/DifferentialDriveKinematics.html?is-external=true" title="class or interface in edu.wpi.first.math.kinematics" class="externalLink">DifferentialDriveKinematics</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#kinematics">kinematics</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected com.revrobotics.RelativeEncoder</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#leftEncoder">leftEncoder</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected com.revrobotics.CANSparkMax</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#leftFront">leftFront</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected com.revrobotics.SparkMaxPIDController</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#leftPID">leftPID</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected com.revrobotics.CANSparkMax</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#leftRear">leftRear</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected double</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ratio">ratio</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected com.revrobotics.RelativeEncoder</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#rightEncoder">rightEncoder</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected com.revrobotics.CANSparkMax</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#rightFront">rightFront</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected com.revrobotics.SparkMaxPIDController</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#rightPID">rightPID</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected com.revrobotics.CANSparkMax</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#rightRear">rightRear</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected double</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#wheelSize">wheelSize</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+</section>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
 <section>
 <ul class="blockList">
@@ -149,7 +229,41 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E()">QEDiffDrive</a></span>()</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(int,int,int,int)">QEDiffDrive</a></span>&#8203;(int&nbsp;leftFrontID,
+           int&nbsp;leftBackID,
+           int&nbsp;rightFrontID,
+           int&nbsp;rightBackID)</code></th>
+<td class="colLast">
+<div class="block">Creates an instance with all defaults: 6 inch wheels and an 8.45:1 AndyMark Toughbox Gearbox.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(int,int,int,int,double,double)">QEDiffDrive</a></span>&#8203;(int&nbsp;leftFrontID,
+           int&nbsp;leftBackID,
+           int&nbsp;rightFrontID,
+           int&nbsp;rightBackID,
+           double&nbsp;gearboxRatio,
+           double&nbsp;wheelSizeMeters)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(int,int,int,int,double,frc.qefrc.qelib.drive.WheelTypes)">QEDiffDrive</a></span>&#8203;(int&nbsp;leftFrontID,
+           int&nbsp;leftBackID,
+           int&nbsp;rightFrontID,
+           int&nbsp;rightBackID,
+           double&nbsp;gearboxRatio,
+           <a href="WheelTypes.html" title="enum in frc.qefrc.qelib.drive">WheelTypes</a>&nbsp;wheelType)</code></th>
+<td class="colLast">
+<div class="block">Create an instance with a custom gearbox ratio and Common Wheel sth</div>
+</td>
+</tr>
+<tr class="rowColor">
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.revrobotics.CANSparkMax,com.revrobotics.CANSparkMax,com.revrobotics.CANSparkMax,com.revrobotics.CANSparkMax,double,double)">QEDiffDrive</a></span>&#8203;(com.revrobotics.CANSparkMax&nbsp;leftFrontCtrl,
+           com.revrobotics.CANSparkMax&nbsp;leftRearCtrl,
+           com.revrobotics.CANSparkMax&nbsp;rightFrontCtrl,
+           com.revrobotics.CANSparkMax&nbsp;rightRearCtrl,
+           double&nbsp;gearboxRatio,
+           double&nbsp;wheelSizeMeters)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -179,6 +293,124 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<section>
+<ul class="blockList">
+<li class="blockList"><a id="field.detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a id="kinematics">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>kinematics</h4>
+<pre>protected&nbsp;<a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/math/kinematics/DifferentialDriveKinematics.html?is-external=true" title="class or interface in edu.wpi.first.math.kinematics" class="externalLink">DifferentialDriveKinematics</a> kinematics</pre>
+</li>
+</ul>
+<a id="leftFront">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>leftFront</h4>
+<pre>protected final&nbsp;com.revrobotics.CANSparkMax leftFront</pre>
+</li>
+</ul>
+<a id="leftRear">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>leftRear</h4>
+<pre>protected final&nbsp;com.revrobotics.CANSparkMax leftRear</pre>
+</li>
+</ul>
+<a id="rightFront">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>rightFront</h4>
+<pre>protected final&nbsp;com.revrobotics.CANSparkMax rightFront</pre>
+</li>
+</ul>
+<a id="rightRear">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>rightRear</h4>
+<pre>protected final&nbsp;com.revrobotics.CANSparkMax rightRear</pre>
+</li>
+</ul>
+<a id="leftEncoder">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>leftEncoder</h4>
+<pre>protected&nbsp;com.revrobotics.RelativeEncoder leftEncoder</pre>
+</li>
+</ul>
+<a id="rightEncoder">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>rightEncoder</h4>
+<pre>protected&nbsp;com.revrobotics.RelativeEncoder rightEncoder</pre>
+</li>
+</ul>
+<a id="leftPID">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>leftPID</h4>
+<pre>protected&nbsp;com.revrobotics.SparkMaxPIDController leftPID</pre>
+</li>
+</ul>
+<a id="rightPID">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>rightPID</h4>
+<pre>protected&nbsp;com.revrobotics.SparkMaxPIDController rightPID</pre>
+</li>
+</ul>
+<a id="ratio">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ratio</h4>
+<pre>protected&nbsp;double ratio</pre>
+</li>
+</ul>
+<a id="wheelSize">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>wheelSize</h4>
+<pre>protected&nbsp;double wheelSize</pre>
+</li>
+</ul>
+<a id="allMotors">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>allMotors</h4>
+<pre>protected final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;com.revrobotics.CANSparkMax&gt; allMotors</pre>
+</li>
+</ul>
+</li>
+</ul>
+</section>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <section>
 <ul class="blockList">
@@ -186,13 +418,97 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a id="&lt;init&gt;()">
+<a id="&lt;init&gt;(com.revrobotics.CANSparkMax,com.revrobotics.CANSparkMax,com.revrobotics.CANSparkMax,com.revrobotics.CANSparkMax,double,double)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>QEDiffDrive</h4>
+<pre>public&nbsp;QEDiffDrive&#8203;(com.revrobotics.CANSparkMax&nbsp;leftFrontCtrl,
+                   com.revrobotics.CANSparkMax&nbsp;leftRearCtrl,
+                   com.revrobotics.CANSparkMax&nbsp;rightFrontCtrl,
+                   com.revrobotics.CANSparkMax&nbsp;rightRearCtrl,
+                   double&nbsp;gearboxRatio,
+                   double&nbsp;wheelSizeMeters)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>leftFrontCtrl</code> - </dd>
+<dd><code>leftRearCtrl</code> - </dd>
+<dd><code>rightFrontCtrl</code> - </dd>
+<dd><code>rightRearCtrl</code> - </dd>
+<dd><code>gearboxRatio</code> - </dd>
+<dd><code>wheelSizeMeters</code> - Wheel diameter. <i> Must be provided in meters! </i></dd>
+</dl>
+</li>
+</ul>
+<a id="&lt;init&gt;(int,int,int,int,double,double)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>QEDiffDrive</h4>
+<pre>public&nbsp;QEDiffDrive&#8203;(int&nbsp;leftFrontID,
+                   int&nbsp;leftBackID,
+                   int&nbsp;rightFrontID,
+                   int&nbsp;rightBackID,
+                   double&nbsp;gearboxRatio,
+                   double&nbsp;wheelSizeMeters)</pre>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>leftFrontID</code> - </dd>
+<dd><code>leftBackID</code> - </dd>
+<dd><code>rightFrontID</code> - </dd>
+<dd><code>rightBackID</code> - </dd>
+<dd><code>gearboxRatio</code> - Ratio of your gearbox. For example, this would be 8.45 for an 8.45:1
+     gearbox reduction.</dd>
+<dd><code>wheelSizeMeters</code> - Wheel diameter. <i> Must be provided in meters! </i></dd>
+</dl>
+</li>
+</ul>
+<a id="&lt;init&gt;(int,int,int,int,double,frc.qefrc.qelib.drive.WheelTypes)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>QEDiffDrive</h4>
+<pre>public&nbsp;QEDiffDrive&#8203;(int&nbsp;leftFrontID,
+                   int&nbsp;leftBackID,
+                   int&nbsp;rightFrontID,
+                   int&nbsp;rightBackID,
+                   double&nbsp;gearboxRatio,
+                   <a href="WheelTypes.html" title="enum in frc.qefrc.qelib.drive">WheelTypes</a>&nbsp;wheelType)</pre>
+<div class="block">Create an instance with a custom gearbox ratio and Common Wheel sth</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>leftFrontID</code> - CAN ID for the Left Front Motor (Left Leader)</dd>
+<dd><code>leftBackID</code> - CAN ID for the Left Rear Motor</dd>
+<dd><code>rightFrontID</code> - CAN ID for the Right Front Motor (Right Leader)</dd>
+<dd><code>rightBackID</code> - CAN ID for the Right Rear Motor</dd>
+<dd><code>gearboxRatio</code> - Ratio of your gearbox. For example, this would be 8.45 for an 8.45:1
+     gearbox reduction.</dd>
+<dd><code>wheelType</code> - <a href="WheelTypes.html" title="enum in frc.qefrc.qelib.drive"><code>WheelTypes</code></a></dd>
+</dl>
+</li>
+</ul>
+<a id="&lt;init&gt;(int,int,int,int)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>QEDiffDrive</h4>
-<pre>public&nbsp;QEDiffDrive()</pre>
+<pre>public&nbsp;QEDiffDrive&#8203;(int&nbsp;leftFrontID,
+                   int&nbsp;leftBackID,
+                   int&nbsp;rightFrontID,
+                   int&nbsp;rightBackID)</pre>
+<div class="block">Creates an instance with all defaults: 6 inch wheels and an 8.45:1 AndyMark Toughbox Gearbox.
+ These are based on the 2023 Kit Of Parts.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>leftFrontID</code> - CAN ID for the Left Front Motor (Left Leader)</dd>
+<dd><code>leftBackID</code> - CAN ID for the Left Rear Motor</dd>
+<dd><code>rightFrontID</code> - CAN ID for the Right Front Motor (Right Leader)</dd>
+<dd><code>rightBackID</code> - CAN ID for the Right Rear Motor</dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -247,13 +563,13 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li>Method</li>
 </ul>
