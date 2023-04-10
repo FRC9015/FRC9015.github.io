@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -188,27 +188,34 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="LEDSectionController.html" title="class in frc.qefrc.qelib.led">LEDSectionController</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSectionController(frc.qefrc.qelib.led.LEDSection)">getSectionController</a></span>&#8203;(<a href="LEDSection.html" title="class in frc.qefrc.qelib.led">LEDSection</a>&nbsp;section)</code></th>
+<td class="colLast">
+<div class="block">Get a new <a href="LEDSectionController.html" title="class in frc.qefrc.qelib.led"><code>LEDSectionController</code></a> from an <a href="LEDSection.html" title="class in frc.qefrc.qelib.led"><code>LEDSection</code></a></div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#off()">off</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Set all LEDs to Black, aka Off.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setColor(edu.wpi.first.wpilibj.util.Color)">setColor</a></span>&#8203;(<a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj/util/Color.html?is-external=true" title="class or interface in edu.wpi.first.wpilibj.util" class="externalLink">Color</a>&nbsp;color)</code></th>
 <td class="colLast">
 <div class="block">Set one color on the whole LED Strip</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setColor(edu.wpi.first.wpilibj.util.Color8Bit)">setColor</a></span>&#8203;(<a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj/util/Color8Bit.html?is-external=true" title="class or interface in edu.wpi.first.wpilibj.util" class="externalLink">Color8Bit</a>&nbsp;color)</code></th>
 <td class="colLast">
 <div class="block">Set one color on the whole LED Strip</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setColorRange(edu.wpi.first.wpilibj.util.Color8Bit,frc.qefrc.qelib.led.LEDSection)">setColorRange</a></span>&#8203;(<a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj/util/Color8Bit.html?is-external=true" title="class or interface in edu.wpi.first.wpilibj.util" class="externalLink">Color8Bit</a>&nbsp;color,
              <a href="LEDSection.html" title="class in frc.qefrc.qelib.led">LEDSection</a>&nbsp;section)</code></th>
@@ -216,7 +223,7 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <div class="block">Set a static color on a section of LEDs</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setColorRange(edu.wpi.first.wpilibj.util.Color,frc.qefrc.qelib.led.LEDSection)">setColorRange</a></span>&#8203;(<a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj/util/Color.html?is-external=true" title="class or interface in edu.wpi.first.wpilibj.util" class="externalLink">Color</a>&nbsp;color,
              <a href="LEDSection.html" title="class in frc.qefrc.qelib.led">LEDSection</a>&nbsp;section)</code></th>
@@ -224,7 +231,7 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <div class="block">Set a static color on a section of LEDs</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setPattern(frc.qefrc.qelib.led.LEDPattern,boolean)">setPattern</a></span>&#8203;(@NonNull <a href="LEDPattern.html" title="interface in frc.qefrc.qelib.led">LEDPattern</a>&nbsp;pattern,
           boolean&nbsp;shouldInterrupt)</code></th>
@@ -232,28 +239,28 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <div class="block">Set a pattern on the LED strip</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#start()">start</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Start LED Output</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stop()">stop</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Stop LED Output</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#update()">update</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Update the LED strip with the most recent LED Buffer data.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#wipe()">wipe</a></span>()</code></th>
 <td class="colLast">
@@ -326,6 +333,21 @@ extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/ja
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><a href="LEDSection.html" title="class in frc.qefrc.qelib.led"><code>LEDSection</code></a> instance that can be passed to address subsections of the LED
      Strip</dd>
+</dl>
+</li>
+</ul>
+<a id="getSectionController(frc.qefrc.qelib.led.LEDSection)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSectionController</h4>
+<pre class="methodSignature">public&nbsp;<a href="LEDSectionController.html" title="class in frc.qefrc.qelib.led">LEDSectionController</a>&nbsp;getSectionController&#8203;(<a href="LEDSection.html" title="class in frc.qefrc.qelib.led">LEDSection</a>&nbsp;section)</pre>
+<div class="block">Get a new <a href="LEDSectionController.html" title="class in frc.qefrc.qelib.led"><code>LEDSectionController</code></a> from an <a href="LEDSection.html" title="class in frc.qefrc.qelib.led"><code>LEDSection</code></a></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>section</code> - the section to create the controller with</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
 </dl>
 </li>
 </ul>
