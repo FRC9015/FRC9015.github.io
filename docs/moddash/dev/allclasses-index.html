@@ -27,8 +27,8 @@
     catch(err) {
     }
 //-->
-var data = {"i0":2,"i1":2,"i2":2,"i3":2,"i4":2,"i5":1,"i6":2};
-var tabs = {65535:["t0","All Classes"],1:["t1","Interface Summary"],2:["t2","Class Summary"]};
+var data = {"i0":8,"i1":2,"i2":2,"i3":2,"i4":2,"i5":2,"i6":2,"i7":2,"i8":1,"i9":2,"i10":2};
+var tabs = {65535:["t0","All Classes"],1:["t1","Interface Summary"],2:["t2","Class Summary"],8:["t4","Exception Summary"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -105,46 +105,68 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul class="blockList">
 <li class="blockList">
 <table class="typeSummary">
-<caption><span id="t0" class="activeTableTab"><span>All Classes</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Interface Summary</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Class Summary</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Classes</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Interface Summary</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Class Summary</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Exception Summary</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Class</th>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><a href="frc/qefrc/moddash/widgets/AlreadyExistsException.html" title="class in frc.qefrc.moddash.widgets">AlreadyExistsException</a></td>
+<th class="colLast" scope="row">
+<div class="block">This exception is thrown if a widget with the same name as one that already exists but is of a different type is trying to be created.</div>
+</th>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><a href="frc/qefrc/moddash/widgets/BooleanDisplayWidget.html" title="class in frc.qefrc.moddash.widgets">BooleanDisplayWidget</a></td>
 <th class="colLast" scope="row">
 <div class="block">Display a boolean on the Dashboard.</div>
 </th>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><a href="frc/qefrc/moddash/widgets/BooleanToggleWidget.html" title="class in frc.qefrc.moddash.widgets">BooleanToggleWidget</a></td>
 <th class="colLast" scope="row">
 <div class="block">Display a toggle widget on the dashboard.</div>
 </th>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><a href="frc/qefrc/moddash/widgets/ColorDisplayWidget.html" title="class in frc.qefrc.moddash.widgets">ColorDisplayWidget</a></td>
+<th class="colLast" scope="row">
+<div class="block">Display any color on the dashboard.</div>
+</th>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><a href="frc/qefrc/moddash/widgets/DoubleWidget.html" title="class in frc.qefrc.moddash.widgets">DoubleWidget</a></td>
 <th class="colLast" scope="row">&nbsp;</th>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
+<td class="colFirst"><a href="frc/qefrc/moddash/widgets/IntegerWidget.html" title="class in frc.qefrc.moddash.widgets">IntegerWidget</a></td>
+<th class="colLast" scope="row">&nbsp;</th>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><a href="frc/qefrc/moddash/ModDash.html" title="class in frc.qefrc.moddash">ModDash</a></td>
 <th class="colLast" scope="row">
 <div class="block">The root ModDash instance.</div>
 </th>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><a href="frc/qefrc/moddash/ModDashTab.html" title="class in frc.qefrc.moddash">ModDashTab</a></td>
 <th class="colLast" scope="row">
 <div class="block">Tab instance.</div>
 </th>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><a href="frc/qefrc/moddash/widgets/ModDashWidget.html" title="interface in frc.qefrc.moddash.widgets">ModDashWidget</a></td>
 <th class="colLast" scope="row">
 <div class="block">Base interface for Widgets on ModDash.</div>
 </th>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i9" class="rowColor">
+<td class="colFirst"><a href="frc/qefrc/moddash/widgets/ModDashWidgetBase.html" title="class in frc.qefrc.moddash.widgets">ModDashWidgetBase</a></td>
+<th class="colLast" scope="row">
+<div class="block">Base class for creating widget types.</div>
+</th>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><a href="frc/qefrc/moddash/widgets/StringWidget.html" title="class in frc.qefrc.moddash.widgets">StringWidget</a></td>
 <th class="colLast" scope="row">
 <div class="block">A simple string display widget.</div>

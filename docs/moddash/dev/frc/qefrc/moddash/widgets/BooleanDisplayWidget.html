@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
+var data = {"i0":10,"i1":10,"i2":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -95,7 +95,7 @@ loadScripts(document, 'script');</script>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -123,7 +123,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
+<li><a href="ModDashWidgetBase.html" title="class in frc.qefrc.moddash.widgets">frc.qefrc.moddash.widgets.ModDashWidgetBase</a></li>
+<li>
+<ul class="inheritance">
 <li>frc.qefrc.moddash.widgets.BooleanDisplayWidget</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -136,8 +141,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">BooleanDisplayWidget</span>
-extends <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>
-implements <a href="ModDashWidget.html" title="interface in frc.qefrc.moddash.widgets">ModDashWidget</a></pre>
+extends <a href="ModDashWidgetBase.html" title="class in frc.qefrc.moddash.widgets">ModDashWidgetBase</a></pre>
 <div class="block">Display a boolean on the Dashboard. Default Dimensions are 1x1 (W x H) <br></br>
  Colors are customizable.</div>
 </li>
@@ -153,19 +157,13 @@ implements <a href="ModDashWidget.html" title="interface in frc.qefrc.moddash.wi
 <!--   -->
 </a>
 <h3>Field Summary</h3>
-<table class="memberSummary">
-<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colSecond" scope="col">Field</th>
-<th class="colLast" scope="col">Description</th>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#widgetName">widgetName</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-</table>
+<ul class="blockList">
+<li class="blockList"><a id="fields.inherited.from.class.frc.qefrc.moddash.widgets.ModDashWidgetBase">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;frc.qefrc.moddash.widgets.<a href="ModDashWidgetBase.html" title="class in frc.qefrc.moddash.widgets">ModDashWidgetBase</a></h3>
+<code><a href="ModDashWidgetBase.html#nt">nt</a>, <a href="ModDashWidgetBase.html#widgetName">widgetName</a></code></li>
+</ul>
 </li>
 </ul>
 </section>
@@ -209,62 +207,32 @@ implements <a href="ModDashWidget.html" title="interface in frc.qefrc.moddash.wi
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>int[]</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getHeightAndWidth()">getHeightAndWidth</a></span>()</code></th>
-<td class="colLast">
-<div class="block">Return the widget's height and width in an array.</div>
-</td>
-</tr>
-<tr id="i1" class="rowColor">
-<td class="colFirst"><code>int[]</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPosition()">getPosition</a></span>()</code></th>
-<td class="colLast">
-<div class="block">Return the widget's X & Y position in an array.</div>
-</td>
-</tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDisplayName(java.lang.String)">setDisplayName</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
-<td class="colLast">
-<div class="block">Update the widget's display name.</div>
-</td>
-</tr>
-<tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setFalseColor(edu.wpi.first.wpilibj.util.Color)">setFalseColor</a></span>&#8203;(<a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj/util/Color.html?is-external=true" title="class or interface in edu.wpi.first.wpilibj.util" class="externalLink">Color</a>&nbsp;color)</code></th>
 <td class="colLast">
 <div class="block">Set color when false</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setHeightAndWidth(int,int)">setHeightAndWidth</a></span>&#8203;(int&nbsp;height,
-                 int&nbsp;width)</code></th>
-<td class="colLast">
-<div class="block">Set the Height and Width of the widget</div>
-</td>
-</tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setPosition(int,int)">setPosition</a></span>&#8203;(int&nbsp;x,
-           int&nbsp;y)</code></th>
-<td class="colLast">
-<div class="block">Set X & Y position of the widget</div>
-</td>
-</tr>
-<tr id="i6" class="altColor">
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setTrueColor(edu.wpi.first.wpilibj.util.Color)">setTrueColor</a></span>&#8203;(<a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj/util/Color.html?is-external=true" title="class or interface in edu.wpi.first.wpilibj.util" class="externalLink">Color</a>&nbsp;color)</code></th>
 <td class="colLast">
 <div class="block">Set color when true</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setValue(boolean)">setValue</a></span>&#8203;(boolean&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.frc.qefrc.moddash.widgets.ModDashWidgetBase">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;frc.qefrc.moddash.widgets.<a href="ModDashWidgetBase.html" title="class in frc.qefrc.moddash.widgets">ModDashWidgetBase</a></h3>
+<code><a href="ModDashWidgetBase.html#getHeightAndWidth()">getHeightAndWidth</a>, <a href="ModDashWidgetBase.html#getPosition()">getPosition</a>, <a href="ModDashWidgetBase.html#setDisplayName(java.lang.String)">setDisplayName</a>, <a href="ModDashWidgetBase.html#setHeightAndWidth(int,int)">setHeightAndWidth</a>, <a href="ModDashWidgetBase.html#setPosition(int,int)">setPosition</a>, <a href="ModDashWidgetBase.html#setType(edu.wpi.first.networktables.NetworkTable,java.lang.String)">setType</a></code></li>
+</ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
 <!--   -->
@@ -288,25 +256,6 @@ implements <a href="ModDashWidget.html" title="interface in frc.qefrc.moddash.wi
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
-<!-- ============ FIELD DETAIL =========== -->
-<section>
-<ul class="blockList">
-<li class="blockList"><a id="field.detail">
-<!--   -->
-</a>
-<h3>Field Detail</h3>
-<a id="widgetName">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>widgetName</h4>
-<pre>public final&nbsp;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> widgetName</pre>
-</li>
-</ul>
-</li>
-</ul>
-</section>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <section>
 <ul class="blockList">
@@ -358,94 +307,11 @@ implements <a href="ModDashWidget.html" title="interface in frc.qefrc.moddash.wi
 <a id="setFalseColor(edu.wpi.first.wpilibj.util.Color)">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>setFalseColor</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;setFalseColor&#8203;(<a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj/util/Color.html?is-external=true" title="class or interface in edu.wpi.first.wpilibj.util" class="externalLink">Color</a>&nbsp;color)</pre>
 <div class="block">Set color when false</div>
-</li>
-</ul>
-<a id="getHeightAndWidth()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getHeightAndWidth</h4>
-<pre class="methodSignature">public&nbsp;int[]&nbsp;getHeightAndWidth()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="ModDashWidget.html#getHeightAndWidth()">ModDashWidget</a></code></span></div>
-<div class="block">Return the widget's height and width in an array.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="ModDashWidget.html#getHeightAndWidth()">getHeightAndWidth</a></code>&nbsp;in interface&nbsp;<code><a href="ModDashWidget.html" title="interface in frc.qefrc.moddash.widgets">ModDashWidget</a></code></dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>array of length 2, formatted [height, width]</dd>
-</dl>
-</li>
-</ul>
-<a id="getPosition()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getPosition</h4>
-<pre class="methodSignature">public&nbsp;int[]&nbsp;getPosition()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="ModDashWidget.html#getPosition()">ModDashWidget</a></code></span></div>
-<div class="block">Return the widget's X & Y position in an array.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="ModDashWidget.html#getPosition()">getPosition</a></code>&nbsp;in interface&nbsp;<code><a href="ModDashWidget.html" title="interface in frc.qefrc.moddash.widgets">ModDashWidget</a></code></dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>array of length 2, formatted [x, y]</dd>
-</dl>
-</li>
-</ul>
-<a id="setPosition(int,int)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setPosition</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setPosition&#8203;(int&nbsp;x,
-                        int&nbsp;y)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="ModDashWidget.html#setPosition(int,int)">ModDashWidget</a></code></span></div>
-<div class="block">Set X & Y position of the widget</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="ModDashWidget.html#setPosition(int,int)">setPosition</a></code>&nbsp;in interface&nbsp;<code><a href="ModDashWidget.html" title="interface in frc.qefrc.moddash.widgets">ModDashWidget</a></code></dd>
-</dl>
-</li>
-</ul>
-<a id="setHeightAndWidth(int,int)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setHeightAndWidth</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setHeightAndWidth&#8203;(int&nbsp;height,
-                              int&nbsp;width)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="ModDashWidget.html#setHeightAndWidth(int,int)">ModDashWidget</a></code></span></div>
-<div class="block">Set the Height and Width of the widget</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="ModDashWidget.html#setHeightAndWidth(int,int)">setHeightAndWidth</a></code>&nbsp;in interface&nbsp;<code><a href="ModDashWidget.html" title="interface in frc.qefrc.moddash.widgets">ModDashWidget</a></code></dd>
-</dl>
-</li>
-</ul>
-<a id="setDisplayName(java.lang.String)">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>setDisplayName</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setDisplayName&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="ModDashWidget.html#setDisplayName(java.lang.String)">ModDashWidget</a></code></span></div>
-<div class="block">Update the widget's display name.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="ModDashWidget.html#setDisplayName(java.lang.String)">setDisplayName</a></code>&nbsp;in interface&nbsp;<code><a href="ModDashWidget.html" title="interface in frc.qefrc.moddash.widgets">ModDashWidget</a></code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>name</code> - name to set.</dd>
-</dl>
 </li>
 </ul>
 </li>
@@ -506,7 +372,7 @@ implements <a href="ModDashWidget.html" title="interface in frc.qefrc.moddash.wi
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
