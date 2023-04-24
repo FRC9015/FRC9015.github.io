@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -204,11 +204,21 @@ extends <a href="ModDashWidgetBase.html" title="class in frc.qefrc.moddash.widge
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setColorSupplier(java.util.function.Supplier)">setColorSupplier</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;<a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj/util/Color.html?is-external=true" title="class or interface in edu.wpi.first.wpilibj.util" class="externalLink">Color</a>&gt;&nbsp;supplyColor)</code></th>
+<td class="colFirst"><code><a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj/util/Color.html?is-external=true" title="class or interface in edu.wpi.first.wpilibj.util" class="externalLink">Color</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getColor()">getColor</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setColor(edu.wpi.first.wpilibj.util.Color)">setColor</a></span>&#8203;(<a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj/util/Color.html?is-external=true" title="class or interface in edu.wpi.first.wpilibj.util" class="externalLink">Color</a>&nbsp;color)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setColor(edu.wpi.first.wpilibj.util.Color8Bit)">setColor</a></span>&#8203;(<a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj/util/Color8Bit.html?is-external=true" title="class or interface in edu.wpi.first.wpilibj.util" class="externalLink">Color8Bit</a>&nbsp;color)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#update()">update</a></span>()</code></th>
 <td class="colLast">
@@ -285,13 +295,31 @@ extends <a href="ModDashWidgetBase.html" title="class in frc.qefrc.moddash.widge
 <div class="block">Override this method to run any periodic update logic if needed.</div>
 </li>
 </ul>
-<a id="setColorSupplier(java.util.function.Supplier)">
+<a id="setColor(edu.wpi.first.wpilibj.util.Color)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setColor</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setColor&#8203;(<a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj/util/Color.html?is-external=true" title="class or interface in edu.wpi.first.wpilibj.util" class="externalLink">Color</a>&nbsp;color)</pre>
+</li>
+</ul>
+<a id="setColor(edu.wpi.first.wpilibj.util.Color8Bit)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setColor</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setColor&#8203;(<a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj/util/Color8Bit.html?is-external=true" title="class or interface in edu.wpi.first.wpilibj.util" class="externalLink">Color8Bit</a>&nbsp;color)</pre>
+</li>
+</ul>
+<a id="getColor()">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>setColorSupplier</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setColorSupplier&#8203;(<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function" class="externalLink">Supplier</a>&lt;<a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj/util/Color.html?is-external=true" title="class or interface in edu.wpi.first.wpilibj.util" class="externalLink">Color</a>&gt;&nbsp;supplyColor)</pre>
+<h4>getColor</h4>
+<pre class="methodSignature">public&nbsp;<a href="https://github.wpilib.org/allwpilib/docs/release/java/edu/wpi/first/wpilibj/util/Color.html?is-external=true" title="class or interface in edu.wpi.first.wpilibj.util" class="externalLink">Color</a>&nbsp;getColor()</pre>
 </li>
 </ul>
 </li>
